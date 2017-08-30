@@ -1,0 +1,8 @@
+project(library1)
+
+set(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS ON)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/build/bin)
+
+add_library(${PROJECT_NAME} SHARED
+	src/test.cpp
+)
